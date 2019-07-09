@@ -1,0 +1,9 @@
+#!/bin/bash
+apt update -y
+apt install -y apache2
+apt install -y php libapache2-mod-php php-mysql
+git clone https://github.com/dbielik/mdt/
+cp -R mdt/www/* /var/www/html
+
+
+
